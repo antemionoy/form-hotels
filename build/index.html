@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <title>test</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__container container">
+        <div class="header__grid d-flex">
+            <nav class="menu header__menu d-flex">
+                <div class="menu__item">
+                    <a href="#" class="menu__link">search tickets</a>
+                </div>
+                <div class="menu__item">
+                    <a href="#" class="menu__link">sapsan</a>
+                </div>
+                <div class="menu__item">
+                    <a href="#" class="menu__link">allegro</a>
+                </div>
+                <div class="menu__item menu__item_dropdown">
+                    <a href="#" class="menu__link">trans-siberian</a>
+                    <ul class="list menu__list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__item menu__item_dropdown">
+                    <a href="#" class="menu__link">faq</a>
+                    <ul class="list menu__list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__item menu__item_dropdown">
+                    <a href="#" class="menu__link">tickets guide</a>
+                    <ul class="list menu__list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__item menu__item_dropdown">
+                    <a href="#" class="menu__link">contact us</a>
+                    <ul class="list menu__list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">allegro</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#" class="menu__signin">
+                <span class="menu__signin_text">Sign in</span>
+            </a>
+            <!-- menu mobile -->
+            <div class="hamburger" id="hamburger-1">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="center">
+    <div class="container">
+        <div class="center__title">Russian Train Tickets</div>
+        <form action="#" class="form center__form">
+            <div class="form__top d-flex">
+                <div class="form__item form__item_big">
+                    <label class="form__label">Departure city:</label>
+                    <input type="text" placeholder="Type city name" class="form__input">
+                    <div class="choice form__choice">
+                        <span>Ex:</span>
+                        <a href="#" class="choice__item">St.Peterburg</a>,
+                        <a href="#" class="choice__item">Moscow</a>
+                    </div>
+                </div>
+                <a href="#" class="form__swap"></a>
+                <div class="form__item form__item_big">
+                    <label class="form__label">Arrival city:</label>
+                    <input type="text" placeholder="Type city name" class="form__input">
+                    <div class="choice form__choice">
+                        <span>Ex:</span>
+                        <a href="#" class="choice__item">St.Peterburg</a>,
+                        <a href="#" class="choice__item">Moscow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form__bottom d-flex">
+                <div class="form__item">
+                    <label class="form__label">Departure date:</label>
+                    <input type="text" placeholder="dd.mm.yyy" class="form__input form__input_icon-date">
+                </div>
+                <div class="form__item form__item_row">
+                    <input class="form__checkbox" id="form__checkbox" type="checkbox">
+                    <label class="form__label" for="form__checkbox">Roundtrip</label>
+                </div>
+                <div class="form__item">
+                    <label class="form__label">Return date:</label>
+                    <input class="form__input form__disabled form__input_icon-date form__input_disabled" type="text" placeholder="dd.mm.yyy" disabled="disabled" >
+                </div>
+                <div class="form__item form__item_select-box">
+                    <label class="form__label">Currency</label>
+                    <select class="form__select">
+                        <option value="RUB">rub</option>
+                        <option value="USD">usd</option>
+                        <option value="BGR">gbr</option>
+                        <option value="EUR">eur</option>
+                        <option value="CHF">chf</option>
+                    </select>
+                </div>
+                <button class="form__button">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+
+</html>
